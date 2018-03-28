@@ -15,7 +15,8 @@ function [dataOut] = loadInputs(inputFile)
 %      -> The value can be a string, or an array of numbers.
 % 
 % Inputs:
-%           inputFile:  File that contains the inputs
+%           inputFile:  Filename of the input file.  The file needs to be
+%                       an ASCII file.
 % 
 % Outputs: 
 %           dataOut:    Output structure containing all inputs from the
