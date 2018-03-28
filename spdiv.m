@@ -1,5 +1,5 @@
 function [npx,npy] = spdiv(param)
-% *************************************************************************
+% ------------------------------------------------------------------------
 % This funciton takes an imporatant parameter of interest and decides the
 % approriate division of subplot figures.  Essentially determines the grid
 % of subplots to use.
@@ -13,20 +13,20 @@ function [npx,npy] = spdiv(param)
 %                of.
 %
 % Outputs:
-%       npx -   x number of plots (Number of columns)
-%       npy -   y number of plots (Number of rows)
+%       npx -   x number of plots (Number of rows)
+%       npy -   y number of plots (Number of columns)
 %
-% Last Updated:  8 November, 2015
+% Last Updated:  March 28, 2018
 %
 % Edits:
 %
-% *************************************************************************
+% ------------------------------------------------------------------------
 %  --- Begin Function
 % I) There are multiple things that need to be checked, first if it is a
 % perfect square then, the grid needs to be uniform in both x and y.
 %       i.e. Say param is an integer n, and m is the square root of n and m
 %            itself is an integer.  Then the grid would be (npx,npy)= (m,m).
-sof = sqrt(param);       % Taking the square root
+sof = sqrt(param);      % Taking the square root
 sofmod = mod(sof,1);    % Determining if the square root is an integer
 if sofmod == 0
     npx = sof;  npy = sof;
