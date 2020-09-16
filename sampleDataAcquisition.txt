@@ -7,7 +7,7 @@
 // --- Begin Inputs ---
 wkdir = C:\Users\Barry\Documents\MATLAB\Test
 // fsamp - hz, sampleTime - s, pauseTime - s
-fsamp = 1000 //
+fsamp = 1000 
 sampleTime = 1
 pauseTime = 1
 numberOfSteps = 3
